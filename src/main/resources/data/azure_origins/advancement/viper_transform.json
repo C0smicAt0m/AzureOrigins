@@ -1,31 +1,23 @@
 {
   "display": {
     "icon": {
-      "id": "minecraft:potion",
-      "components": {
-        "minecraft:custom_model_data": 3871001
-      },
+      "id": "azure_origins:caustic_elixir",
       "count": 1
     },
-    "title": "Deadly to the touch",
-    "description": "Consume the caustic elixir",
-    "frame": "task",
+    "title": "Deadly to the Touch",
+    "description": "Consume the Caustic Elixir",
+    "frame": "challenge",
     "show_toast": true,
     "announce_to_chat": true,
     "hidden": false
   },
   "parent": "azure_origins:azure_origins_root",
   "criteria": {
-    "experience": {
+    "consume_elixir": {
       "trigger": "minecraft:consume_item",
       "conditions": {
         "item": {
-          "items": "potion",
-          "components": {
-            "minecraft:custom_data": {
-              "caustic": 1
-            }
-          }
+          "items": "azure_origins:caustic_elixir"
         }
       }
     }
