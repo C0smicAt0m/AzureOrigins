@@ -1,0 +1,22 @@
+{
+    "display": {
+      "icon": {
+        "id": "minecraft:tuff_bricks"
+      },
+      "title": "Toxic Shrine",
+      "description": "Step into the ancient chambers of the Moon Temple"
+    },
+    "parent": "azure_origins:azure_origins_root",
+    "criteria": {
+      "enter_sun_temple": {
+        "trigger": "minecraft:location",
+        "conditions": {
+          "player": {
+            "location": {
+              "structures": "azure_origins:moon_temple"
+            }
+          }
+        }
+      }
+    }
+}

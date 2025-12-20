@@ -1,0 +1,31 @@
+{
+    "name": "Thermal Shock",
+    "description": "You move slower in both extreme cold and extreme heat.",
+    "condition": {
+        "type": "origins:biome",
+        "condition": {
+            "type": "origins:or",
+            "conditions": [
+                {
+                    "type": "origins:temperature",
+                    "comparison": ">=",
+                    "compare_to": 2
+                },
+                {
+                    "type": "origins:temperature",
+                    "comparison": "<=",
+                    "compare_to": 0.05
+                }
+            ]
+        }
+    },
+    "type": "origins:conditioned_attribute",
+    "modifier": {
+        "id": "5d75f647-cc30-472b-a3c1-4f4aa7cd06c3",
+        "attribute": "minecraft:generic.movement_speed",
+        "operation": "ADD_VALUE",
+        "amount": -0.05
+    },
+    "tick_rate": 20,
+    "update_health": true
+}

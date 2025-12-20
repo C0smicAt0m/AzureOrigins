@@ -1,0 +1,23 @@
+{
+    "name": "\"Magic Schmagic\"",
+    "description": "You don't believe in enchanting, or potions.",
+    "type": "origins:multiple",
+    "prevent_enchant": {
+        "type": "origins:action_over_time",
+        "interval": 1,
+        "entity_action": {
+            "type": "origins:modify_inventory",
+            "inventory_type": "inventory",
+            "item_action": {
+                "type": "origins:remove_enchantment"
+            },
+            "slots": [],
+            "process_mode": "items",
+            "limit": 0
+        }
+    },
+    "prevent_effect": {
+        "type": "origins:effect_immunity",
+        "inverted": true
+    }
+}

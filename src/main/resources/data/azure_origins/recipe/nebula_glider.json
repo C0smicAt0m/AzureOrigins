@@ -1,0 +1,66 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "ADA",
+    "BCB",
+    "EDE"
+  ],
+  "key": {
+    "A": {
+      "item": "minecraft:phantom_membrane"
+    },
+    "B": {
+      "item": "minecraft:stick"
+    },
+    "C": {
+      "item": "ender_pearl"
+    },
+    "D": {
+      "item": "iron_ingot"
+    },
+    "E": {
+      "item": "string"
+    }
+  },
+  "result": {
+    "id": "minecraft:wooden_sword",
+    "components": {
+      "minecraft:attribute_modifiers": {
+        "modifiers": [
+          {
+            "type": "minecraft:generic.attack_damage",
+            "id": "9f08818d-6d80-446a-85c0-23c266f04797",
+            "amount": 0,
+            "operation": "add_value",
+            "slot": "mainhand"
+          },
+          {
+            "type": "minecraft:generic.attack_speed",
+            "id": "f9706f6e-15a2-4f41-b1e5-7771e1b4bb19",
+            "amount": 0,
+            "operation": "add_value",
+            "slot": "mainhand"
+          }
+        ],
+        "show_in_tooltip": false
+      },
+      "minecraft:unbreakable": {
+        "show_in_tooltip": false
+      },
+      "minecraft:custom_data": {
+        "nebula_glider": 1
+      },
+      "minecraft:custom_model_data": 3870001,
+      "minecraft:item_name": "\"Nebula Glider\"",
+      "minecraft:lore": [
+        "\"Allows you to drift freely through\"",
+        "\"the air and negates all fall damage,\"",
+        "\"so long as you are a child of\"",
+        "\"the cosmos\""
+      ]
+    },
+    "count": 1
+  },
+  "show_notification": true
+}

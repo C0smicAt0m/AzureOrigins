@@ -1,0 +1,33 @@
+{
+    "name": "azure_origins:moon_temple/start_rooms",
+    "fallback": "minecraft:empty",
+    "elements": [
+      {
+        "weight": 1,
+        "element": {
+          "element_type": "minecraft:single_pool_element",
+          "projection": "rigid",
+          "location": "azure_origins:moon_temple/start_rooms/startlane_1",
+          "processors": "minecraft:empty"
+        }
+      },
+      {
+        "weight": 1,
+        "element": {
+          "element_type": "minecraft:single_pool_element",
+          "projection": "rigid",
+          "location": "azure_origins:moon_temple/start_rooms/start3way_1",
+          "processors": "minecraft:empty"
+        }
+      },
+      {
+        "weight": 1,
+        "element": {
+          "element_type": "minecraft:single_pool_element",
+          "projection": "rigid",
+          "location": "azure_origins:moon_temple/start_rooms/start4way_1",
+          "processors": "minecraft:empty"
+        }
+      }
+    ]
+  }

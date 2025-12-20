@@ -1,0 +1,12 @@
+{
+    "name": "Fragile Frame",
+    "description": "You have less health than a normal player.",
+    "type": "origins:attribute",
+    "modifier": {
+      "id": "6ee19676-7f4d-47ef-9844-80efe8e57dad",
+      "attribute": "minecraft:generic.max_health",
+      "amount": -4,
+      "operation": 0
+    },
+    "update_health": true
+  }

@@ -1,0 +1,2 @@
+give @p rotten_flesh[food={nutrition:0,saturation:0,can_always_eat:1b,eat_seconds:0.1},custom_model_data=3870001,item_name='["",{"text":"Flare of Helios","italic":false}]',rarity=epic]
+give @p rotten_flesh[food={nutrition:0,saturation:0,can_always_eat:1b,eat_seconds:0.1},custom_model_data=3870002,item_name='["",{"text":"Surge of Selene","italic":false}]',rarity=epic]

@@ -1,0 +1,12 @@
+{
+    "name": "Brittle Bones",
+    "description": "You have less health than a regular player.",
+    "type": "origins:attribute",
+    "modifier": {
+        "id": "e6e9dfb1-13ed-470e-baf2-11fc4cd29f67",
+        "attribute": "minecraft:generic.max_health",
+        "operation": "ADD_VALUE",
+        "amount": -6
+    },
+    "update_health": true
+}

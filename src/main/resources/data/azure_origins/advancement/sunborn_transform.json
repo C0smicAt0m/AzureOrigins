@@ -1,0 +1,30 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:rotten_flesh",
+      "components": {
+        "minecraft:custom_model_data": 3870001
+      }
+    },
+    "title": "Sunborn",
+    "description": "Absorb the Flare of Helios",
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "azure_origins:sun_temple",
+  "criteria": {
+    "eat_flare": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": "rotten_flesh",
+          "components": {
+            "minecraft:custom_model_data": 3870001
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,42 @@
+{
+    "name": "azure_origins:moon_temple/spawners",
+    "fallback": "minecraft:empty",
+    "elements": [
+      {
+        "weight": 1,
+        "element": {
+          "element_type": "minecraft:single_pool_element",
+          "projection": "rigid",
+          "location": "azure_origins:moon_temple/spawners/zombie_spawner",
+          "processors": "minecraft:empty"
+        }
+      },
+      {
+        "weight": 1,
+        "element": {
+          "element_type": "minecraft:single_pool_element",
+          "projection": "rigid",
+          "location": "azure_origins:moon_temple/spawners/skeleton_spawner",
+          "processors": "minecraft:empty"
+        }
+      },
+      {
+        "weight": 1,
+        "element": {
+          "element_type": "minecraft:single_pool_element",
+          "projection": "rigid",
+          "location": "azure_origins:moon_temple/spawners/husk_spawner",
+          "processors": "minecraft:empty"
+        }
+      },
+      {
+        "weight": 1,
+        "element": {
+          "element_type": "minecraft:single_pool_element",
+          "projection": "rigid",
+          "location": "azure_origins:moon_temple/spawners/bogged_spawner",
+          "processors": "minecraft:empty"
+        }
+      }
+    ]
+  }

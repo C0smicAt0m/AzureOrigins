@@ -1,0 +1,240 @@
+{
+    "name": "azure_origins:sun_temple/hallways",
+    "fallback": "minecraft:empty",
+    "elements": [
+      {
+        "weight": 3,
+        "element": {
+          "element_type": "minecraft:single_pool_element",
+          "projection": "rigid",
+          "location": "azure_origins:sun_temple/hallways/lane",
+          "processors": "minecraft:empty"
+        }
+      },
+      {
+        "weight": 1,
+        "element": {
+          "element_type": "minecraft:single_pool_element",
+          "projection": "rigid",
+          "location": "azure_origins:sun_temple/hallways/3way",
+          "processors": "minecraft:empty"
+        }
+      },
+      {
+        "weight": 1,
+        "element": {
+          "element_type": "minecraft:single_pool_element",
+          "projection": "rigid",
+          "location": "azure_origins:sun_temple/hallways/4way",
+          "processors": "minecraft:empty"
+        }
+      },
+      {
+        "weight": 1,
+        "element": {
+          "element_type": "minecraft:single_pool_element",
+          "projection": "rigid",
+          "location": "azure_origins:sun_temple/hallways/deadend",
+          "processors": "minecraft:empty"
+        }
+      },
+      {
+        "weight": 2,
+        "element": {
+          "element_type": "minecraft:single_pool_element",
+          "projection": "rigid",
+          "location": "azure_origins:sun_temple/hallways/stair",
+          "processors": "minecraft:empty"
+        }
+      },
+      {
+        "weight": 1,
+        "element": {
+          "element_type": "minecraft:single_pool_element",
+          "projection": "rigid",
+          "location": "azure_origins:sun_temple/hallways/fountain4way",
+          "processors": "minecraft:empty"
+        }
+      },
+      {
+        "weight": 1,
+        "element": {
+          "element_type": "minecraft:single_pool_element",
+          "projection": "rigid",
+          "location": "azure_origins:sun_temple/battle_rooms/battle_room_1",
+          "processors": "minecraft:empty"
+        }
+      },
+      {
+        "weight": 1,
+        "element": {
+          "element_type": "minecraft:single_pool_element",
+          "projection": "rigid",
+          "location": "azure_origins:sun_temple/battle_rooms/battle_room_2",
+          "processors": "minecraft:empty"
+        }
+      },
+      {
+        "weight": 2,
+        "element": {
+          "element_type": "minecraft:single_pool_element",
+          "projection": "rigid",
+          "location": "azure_origins:sun_temple/battle_rooms/battle_room_3",
+          "processors": "minecraft:empty"
+        }
+      },
+      {
+        "weight": 1,
+        "element": {
+          "element_type": "minecraft:single_pool_element",
+          "projection": "rigid",
+          "location": "azure_origins:sun_temple/battle_rooms/battle_room_4",
+          "processors": "minecraft:empty"
+        }
+      },
+      {
+        "weight": 1,
+        "element": {
+          "element_type": "minecraft:single_pool_element",
+          "projection": "rigid",
+          "location": "azure_origins:sun_temple/battle_rooms/battle_room_5",
+          "processors": "minecraft:empty"
+        }
+      },
+      {
+        "weight": 1,
+        "element": {
+          "element_type": "minecraft:single_pool_element",
+          "projection": "rigid",
+          "location": "azure_origins:sun_temple/battle_rooms/battle_room_6",
+          "processors": "minecraft:empty"
+        }
+      },
+      {
+        "weight": 1,
+        "element": {
+          "element_type": "minecraft:single_pool_element",
+          "projection": "rigid",
+          "location": "azure_origins:sun_temple/battle_rooms/battle_room_7",
+          "processors": "minecraft:empty"
+        }
+      },
+      {
+        "weight": 1,
+        "element": {
+          "element_type": "minecraft:single_pool_element",
+          "projection": "rigid",
+          "location": "azure_origins:sun_temple/hallways/lavajump",
+          "processors": "minecraft:empty"
+        }
+      },
+      {
+        "weight": 1,
+        "element": {
+          "element_type": "minecraft:single_pool_element",
+          "projection": "rigid",
+          "location": "azure_origins:sun_temple/hallways/church",
+          "processors": "minecraft:empty"
+        }
+      },
+      {
+        "weight": 2,
+        "element": {
+          "element_type": "minecraft:single_pool_element",
+          "projection": "rigid",
+          "location": "azure_origins:sun_temple/hallways/turnhall",
+          "processors": "minecraft:empty"
+        }
+      },
+      {
+        "weight": 1,
+        "element": {
+          "element_type": "minecraft:single_pool_element",
+          "projection": "rigid",
+          "location": "azure_origins:sun_temple/hallways/fountain_stairs",
+          "processors": "minecraft:empty"
+        }
+      },
+      {
+        "weight": 1,
+        "element": {
+          "element_type": "minecraft:single_pool_element",
+          "projection": "rigid",
+          "location": "azure_origins:sun_temple/hallways/bonuslane",
+          "processors": "minecraft:empty"
+        }
+      },
+      {
+        "weight": 1,
+        "element": {
+          "element_type": "minecraft:single_pool_element",
+          "projection": "rigid",
+          "location": "azure_origins:sun_temple/hallways/rail_station",
+          "processors": "minecraft:empty"
+        }
+      },
+      {
+        "weight": 2,
+        "element": {
+          "element_type": "minecraft:single_pool_element",
+          "projection": "rigid",
+          "location": "azure_origins:sun_temple/hallways/greenhouse",
+          "processors": "minecraft:empty"
+        }
+      },
+      {
+        "weight": 2,
+        "element": {
+          "element_type": "minecraft:single_pool_element",
+          "projection": "rigid",
+          "location": "azure_origins:sun_temple/hallways/facility",
+          "processors": "minecraft:empty"
+        }
+      },
+      {
+        "weight": 1,
+        "element": {
+          "element_type": "minecraft:single_pool_element",
+          "projection": "rigid",
+          "location": "azure_origins:sun_temple/hallways/lava_pool",
+          "processors": "minecraft:empty"
+        }
+      },
+      {
+        "weight": 1,
+        "element": {
+          "element_type": "minecraft:single_pool_element",
+          "projection": "rigid",
+          "location": "azure_origins:sun_temple/hallways/cell_block",
+          "processors": "minecraft:empty"
+        }
+      },
+      {
+        "weight": 1,
+        "element": {
+          "element_type": "minecraft:single_pool_element",
+          "projection": "rigid",
+          "location": "azure_origins:sun_temple/hallways/blacksmith",
+          "processors": "minecraft:empty"
+        }
+      },
+      {
+        "weight": 2,
+        "element": {
+          "element_type": "minecraft:single_pool_element",
+          "projection": "rigid",
+          "location": "azure_origins:sun_temple/hallways/training_room",
+          "processors": "minecraft:empty"
+        }
+      },
+      {
+        "weight": 1,
+        "element": {
+          "element_type": "minecraft:single_pool_element",
+          "projection": "rigid",
+          "location": "azure_origins:sun_temple/hallways/fallback",
+          "processors": "minecraft:empty"
+        }
+      }
+    ]
+  }

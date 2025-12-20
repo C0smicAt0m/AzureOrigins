@@ -1,0 +1,33 @@
+{
+    "name": "Basilisk's Gaze",
+    "description": "Turn your foe to stone, giving them extreme slowness for a short duration",
+    "type": "origins:multiple",
+    "raycast_gaze": {
+        "type": "origins:active_self",
+        "entity_action": {
+            "type": "origins:raycast",
+            "distance": 100,
+            "block": false,
+            "bientity_action": {
+                "type": "origins:target_action",
+                "action": {
+                    "type": "origins:apply_effect",
+                    "effect": {
+                        "id": "minecraft:slowness",
+                        "duration": 40,
+                        "amplifier": 255
+                    }
+                }
+            }
+        },
+        "key": {
+            "key": "secondary"
+        },
+        "cooldown": 300,
+        "hud_render": {
+        "should_render": true,
+        "sprite_location": "azure_origins:textures/azureoriginsbars.png",
+        "bar_index": 1
+        }
+    }
+}

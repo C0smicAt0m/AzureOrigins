@@ -1,0 +1,43 @@
+{
+    "name": "Resourceful",
+    "description": "You can craft redstone and slimeballs.",
+    "type": "origins:multiple",
+    "redstone_craft": {
+        "type": "origins:recipe",
+        "recipe": {
+            "id": "azure_origins:easy_redstone",
+            "type": "minecraft:crafting_shapeless",
+            "ingredients": [
+                {
+                    "item": "minecraft:red_dye"
+                },
+                {
+                    "item": "minecraft:sugar"
+                }
+            ],
+            "result": {
+                "id": "minecraft:redstone",
+                "count": 1
+            }
+        }
+    },
+    "slime_ball_craft": {
+        "type": "origins:recipe",
+        "recipe": {
+            "id": "azure_origins:easy_slime_balls",
+            "type": "minecraft:crafting_shapeless",
+            "ingredients": [
+                {
+                    "item": "minecraft:lime_dye"
+                },
+                {
+                    "item": "minecraft:clay_ball"
+                }
+            ],
+            "result": {
+                "id": "minecraft:slime_ball",
+                "count": 1
+            }
+        }
+    }
+}

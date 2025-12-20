@@ -1,0 +1,20 @@
+{
+  "parent": "minecraft:item/template_music_disc",
+  "textures": {
+    "layer0": "minecraft:item/music_disc_cat"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "custom_model_data": 3870001
+      },
+      "model": "item/music_disc_eclipse"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 3870002
+      },
+      "model": "item/music_disc_emerald_lakeside"
+    }
+  ]
+}

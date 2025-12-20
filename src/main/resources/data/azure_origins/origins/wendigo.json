@@ -1,0 +1,16 @@
+{
+    "name": "Wendigo",
+    "description": "\"Hunt. Kill. Feast.\"",
+    "powers": [
+        "azure_origins:wendigo_powers/hide_players",
+        "azure_origins:wendigo_powers/feed_on_kill",
+        "azure_origins:wendigo_powers/prevent_eating",
+        "azure_origins:wendigo_powers/kill_charge",
+        "azure_origins:wendigo_powers/gain_charge",
+        "azure_origins:wendigo_powers/buff"
+    ],
+    "icon": {
+        "id": "minecraft:goat_horn"
+    },
+    "impact": 2
+}

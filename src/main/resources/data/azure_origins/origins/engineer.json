@@ -1,0 +1,15 @@
+{
+    "name": "Engineer",
+    "description": "\"Why think outside the box when you can just give the box a gun?\"",
+    "powers": [
+        "azure_origins:engineer_powers/fragile",
+        "azure_origins:engineer_powers/tesla",
+        "azure_origins:engineer_powers/resource",
+        "azure_origins:engineer_powers/magic_schmagic",
+        "azure_origins:engineer_powers/rocketjump"
+    ],
+    "icon": {
+        "id": "minecraft:redstone"
+    },
+    "impact": 2
+}

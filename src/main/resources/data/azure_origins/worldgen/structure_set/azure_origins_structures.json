@@ -1,0 +1,23 @@
+{
+  "structures": [
+    {
+      "structure": "azure_origins:moon_temple",
+      "weight": 1
+    },
+    {
+      "structure": "azure_origins:sun_temple",
+      "weight": 1
+    },
+    {
+      "structure": "azure_origins:end_lab",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 34,
+    "separation": 8,
+    "spread_type": "triangular",
+    "salt": 19011220
+  }
+}

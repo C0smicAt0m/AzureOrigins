@@ -1,0 +1,8 @@
+{
+    "name": "Souleater",
+    "description": "You cannot eat regular foods and can only feed off of kills.",
+    "type": "origins:prevent_item_use",
+    "item_condition": {
+        "type": "origins:food"
+    }
+}

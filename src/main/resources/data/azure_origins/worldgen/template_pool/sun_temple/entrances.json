@@ -1,0 +1,15 @@
+{
+    "name": "azure_origins:sun_temple/entrances",
+    "fallback": "minecraft:empty",
+    "elements": [
+      {
+        "weight": 1,
+        "element": {
+          "element_type": "minecraft:single_pool_element",
+          "projection": "rigid",
+          "location": "azure_origins:sun_temple/entrances/sun_temple_entrance",
+          "processors": "minecraft:empty"
+        }
+      }
+    ]
+  }

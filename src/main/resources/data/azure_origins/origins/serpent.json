@@ -1,0 +1,28 @@
+{
+    "name": "Serpent",
+    "description": "A dangerous hunter who poisons their pray before feeding on them.",
+    "powers": [
+        "azure_origins:serpent_powers/venomtouch",
+        "azure_origins:serpent_powers/carnivore",
+        "azure_origins:serpent_powers/lunge",
+        "azure_origins:serpent_powers/shedskin",
+        "azure_origins:serpent_powers/heatglow",
+        "azure_origins:serpent_powers/heattoggle",
+        "azure_origins:serpent_powers/heatvision"
+    ],
+    "icon": {
+        "id": "minecraft:potion",
+        "components": {
+            "minecraft:potion_contents": "poison"
+        }
+    },
+    "upgrades": [
+        {
+            "condition": "azure_origins:viper_transform",
+            "origin": "azure_origins:viper",
+            "announcement": "You have become one with the toxins. You are now the Viper"
+        }
+    ],
+    "unchoosable": true,
+    "impact": 1
+}

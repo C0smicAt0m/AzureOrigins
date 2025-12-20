@@ -1,0 +1,2 @@
+When I originally made these models, I was not completely aware of how model and texture files in Minecraft worked.
+When these items are officially added to the mod, their model files will be moved into my own namespace.

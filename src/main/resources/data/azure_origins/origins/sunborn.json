@@ -1,0 +1,22 @@
+{
+    "name": "Sunborn",
+    "description": "Under the sun's rays you triumph, but be weary under the night's veil.",
+    "powers": [
+        "azure_origins:sunborn_powers/time_health",
+        "azure_origins:sunborn_powers/searing_light",
+        "azure_origins:sunborn_powers/celestial_drift",
+        "azure_origins:sunborn_powers/starlight_step"
+    ],
+    "icon": {
+        "id": "minecraft:blaze_rod"
+    },
+    "upgrades": [
+        {
+            "condition": "azure_origins:solar_shroud_transform",
+            "origin": "azure_origins:solar_shroud",
+            "announcement": "Upon absorbing the shard, you find yourself as one with the sun. You have transformed into the Solar Shroud"
+        }
+    ],
+    "impact": 2,
+    "unchoosable": true
+}

@@ -1,0 +1,19 @@
+{
+    "name": "Carnivore",
+    "description": "You can only eat meat, nothing else.",
+    "condition": {
+        "type": "origins:equipped_item",
+        "equipment_slot": "mainhand",
+        "item_condition": {
+            "type": "origins:food"
+        }
+    },
+    "type": "origins:prevent_item_use",
+    "item_condition": {
+        "inverted": false,
+        "type": "origins:ingredient",
+        "ingredient": {
+            "tag": "azure_origins:notcarnivore"
+        }
+    }
+}

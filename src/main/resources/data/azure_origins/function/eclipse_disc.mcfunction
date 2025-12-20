@@ -1,0 +1,1 @@
+give @p music_disc_cat[minecraft:jukebox_playable={song:"azure_origins:eclipse"},custom_model_data=3870001]

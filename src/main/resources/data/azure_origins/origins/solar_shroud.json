@@ -1,0 +1,16 @@
+{
+    "name": "Solar Shroud",
+    "description": "Under the sun's rays you triumph, but be weary under the night's veil.",
+    "powers": [
+        "azure_origins:solar_shroud_powers/time_health",
+        "azure_origins:solar_shroud_powers/daybreak",
+        "azure_origins:solar_shroud_powers/celestial_drift",
+        "azure_origins:solar_shroud_powers/starlight_step"
+    ],
+    "icon": {
+        "id": "minecraft:fire_charge"
+    },
+    "upgrades": [],
+    "impact": 2,
+    "unchoosable": true
+}

@@ -1,0 +1,19 @@
+{
+    "name": "Lunge",
+    "description": "Propel yourself forwards through the air.",
+    "type": "origins:active_self",
+    "entity_action": {
+        "type": "origins:add_velocity",
+        "z": 1,
+        "space": "local",
+        "client": true,
+        "server": true
+    },
+    "cooldown": 80,
+    "hud_render": {
+        "should_render": true,
+        "sprite_location": "azure_origins:textures/azureoriginsbars.png",
+        "bar_index": 5
+    },
+    "key": "primary"
+}

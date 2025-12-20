@@ -1,0 +1,16 @@
+{
+    "name": "Guinea Pig",
+    "description": "Not from Guinea, not a pig, still adorable.",
+    "powers": [
+        "azure_origins:guinea_powers/herbivore",
+        "azure_origins:guinea_powers/cowardly",
+        "azure_origins:guinea_powers/weak",
+        "azure_origins:guinea_powers/social",
+        "azure_origins:guinea_powers/steadfast",
+        "azure_origins:guinea_powers/thermal"
+    ],
+    "icon": {
+        "id": "minecraft:carrot"
+    },
+    "impact": 2
+}

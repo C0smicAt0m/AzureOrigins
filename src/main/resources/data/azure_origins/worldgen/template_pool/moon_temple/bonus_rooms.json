@@ -1,0 +1,15 @@
+{
+    "name": "azure_origins:moon_temple/bonus_rooms",
+    "fallback": "minecraft:empty",
+    "elements": [
+      {
+        "weight": 1,
+        "element": {
+          "element_type": "minecraft:single_pool_element",
+          "projection": "rigid",
+          "location": "azure_origins:moon_temple/bonus_rooms/hidden_deadend",
+          "processors": "minecraft:empty"
+        }
+      }
+    ]
+}

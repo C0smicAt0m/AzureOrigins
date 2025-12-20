@@ -1,0 +1,12 @@
+{
+    "name": "Dwarf",
+    "description": "You have less health than a regular human.",
+    "type": "origins:attribute",
+    "modifier": {
+      "id": "571ce737-51c2-4d7b-b155-e3117cf797d4",
+      "attribute": "minecraft:generic.max_health",
+      "amount": -8,
+      "operation": 0
+    },
+    "update_health": true
+}

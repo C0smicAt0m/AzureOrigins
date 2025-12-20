@@ -1,0 +1,11 @@
+{
+    "type": "origins:resource",
+    "min": 0,
+    "max": 10,
+    "hud_render": {
+        "should_render": true,
+        "sprite_location": "azure_origins:textures/azureoriginsbars.png",
+        "bar_index": 8
+    },
+    "hidden": true
+}

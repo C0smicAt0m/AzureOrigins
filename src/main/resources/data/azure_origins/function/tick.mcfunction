@@ -1,0 +1,7 @@
+function azure_origins:arcane_blast_movement
+function azure_origins:handle_sunfire
+function azure_origins:handle_searing
+function azure_origins:sunbeam_movement
+function azure_origins:lunashock_movement
+function azure_origins:searing_light_movement
+function azure_origins:daybreak_movement

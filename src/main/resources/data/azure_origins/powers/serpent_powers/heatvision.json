@@ -1,0 +1,23 @@
+{
+    "name": "Heat Vision",
+    "description": "While standing still and crouching, you can see mobs through walls.",
+    "type": "origins:cooldown",
+    "cooldown": 20,
+    "hud_render": {
+        "should_render": true,
+        "sprite_location": "azure_origins:textures/azureoriginsbars.png",
+        "bar_index": 0,
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:sneaking"
+                },
+                {
+                    "inverted": true,
+                    "type": "origins:moving"
+                }
+            ]
+        }
+    }
+}

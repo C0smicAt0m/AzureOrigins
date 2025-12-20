@@ -1,0 +1,30 @@
+{
+    "name": "Devour",
+    "description": "You live for the hunt and you feed off your prey. You gain hunger anytime you kill something, and gain even more when you kill other players.",
+    "type": "origins:multiple",
+    "non_player": {
+        "type": "origins:self_action_on_kill",
+        "entity_action": {
+            "type": "origins:feed",
+            "nutrition": 6,
+            "saturation": 0.5
+        },
+        "target_condition": {
+            "type": "origins:entity_type",
+            "entity_type": "minecraft:player",
+            "inverted": true
+        }
+    },
+    "player": {
+        "type": "origins:self_action_on_kill",
+        "entity_action": {
+            "type": "origins:feed",
+            "nutrition": 20,
+            "saturation": 0.5
+        },
+        "target_condition": {
+            "type": "origins:entity_type",
+            "entity_type": "minecraft:player"
+        }
+    }
+}

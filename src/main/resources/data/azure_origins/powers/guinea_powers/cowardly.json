@@ -1,0 +1,35 @@
+{
+    "name": "Cowardly",
+    "description": "Upon being hit, gain a speed boost.",
+    "type": "origins:action_when_hit",
+    "bientity_action": {
+        "type": "origins:target_action",
+        "action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:apply_effect",
+                    "effect": {
+                        "id": "minecraft:speed",
+                        "duration": 160,
+                        "amplifier": 1,
+                        "show_particles": true,
+                        "show_icon": true
+                    }
+                },
+                {
+                    "type": "origins:play_sound",
+                    "sound": "minecraft:entity.goat.screaming.death",
+                    "volume": 5,
+                    "pitch": 2
+                }
+            ]
+        }
+    },
+    "cooldown": 200,
+    "hud_render": {
+        "should_render": true,
+        "sprite_location": "azure_origins:textures/azureoriginsbars.png",
+        "bar_index": 4
+    }
+}

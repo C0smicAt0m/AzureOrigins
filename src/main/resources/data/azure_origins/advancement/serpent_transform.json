@@ -1,0 +1,68 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:potion",
+      "components": {
+        "minecraft:potion_contents": {
+          "potion": "poison"
+        }
+      },
+      "count": 1
+    },
+    "title": "Romeo and Juliet",
+    "description": "Drink a potion of poison",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "azure_origins:azure_origins_root",
+  "criteria": {
+    "drink_poison": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": "minecraft:potion",
+          "components": {
+            "minecraft:potion_contents": {
+              "potion": "minecraft:poison"
+            }
+          }
+        }
+      }
+    },
+    "drink_long_poison": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": "potion",
+          "components": {
+            "minecraft:potion_contents": {
+              "potion": "long_poison"
+            }
+          }
+        }
+      }
+    },
+    "drink_strong_poison": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": "potion",
+          "components": {
+            "minecraft:potion_contents": {
+              "potion": "strong_poison"
+            }
+          }
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "drink_poison",
+      "drink_long_poison",
+      "drink_strong_poison"
+    ]
+  ]
+}

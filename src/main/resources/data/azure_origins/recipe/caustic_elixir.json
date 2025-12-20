@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    " B ",
+    "BAB",
+    " B "
+  ],
+  "key": {
+    "A": {
+      "item": "dragon_breath"
+    },
+    "B": {
+      "item": "spider_eye"
+    }
+  },
+  "result": {
+    "id": "potion",
+    "components": {
+      "minecraft:custom_model_data": 3871001,
+      "minecraft:potion_contents": {
+        "potion": "long_poison"
+      },
+      "minecraft:item_name": "\"Caustic Elixir\"",
+      "minecraft:rarity": "epic",
+      "minecraft:custom_data": "{caustic:1b}"
+    },
+    "count": 1
+  },
+  "show_notification": true
+}

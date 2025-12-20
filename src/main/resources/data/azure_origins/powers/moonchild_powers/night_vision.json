@@ -1,0 +1,6 @@
+{
+    "name": "Moonlit Eyes",
+    "description": "You can see much better in the dark.",
+    "type": "origins:night_vision",
+    "strength": 0.5
+}

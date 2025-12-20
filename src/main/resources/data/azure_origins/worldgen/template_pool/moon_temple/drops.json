@@ -1,0 +1,24 @@
+{
+    "name": "azure_origins:moon_temple/drops",
+    "fallback": "minecraft:empty",
+    "elements": [
+      {
+        "weight": 1,
+        "element": {
+          "element_type": "minecraft:single_pool_element",
+          "projection": "rigid",
+          "location": "azure_origins:moon_temple/drops/moon_temple_drop_1",
+          "processors": "minecraft:empty"
+        }
+      },
+      {
+        "weight": 1,
+        "element": {
+          "element_type": "minecraft:single_pool_element",
+          "projection": "rigid",
+          "location": "azure_origins:moon_temple/drops/moon_temple_drop_2",
+          "processors": "minecraft:empty"
+        }
+      }
+    ]
+}

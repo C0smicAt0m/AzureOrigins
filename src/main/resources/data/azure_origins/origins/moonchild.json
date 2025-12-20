@@ -1,0 +1,16 @@
+{
+    "name": "Moonchild",
+    "description": "Under the night's veil you triumph, but be weary under the sun's rays.",
+    "powers": [
+        "azure_origins:moonchild_powers/time_health",
+        "azure_origins:moonchild_powers/lunashock",
+        "azure_origins:moonchild_powers/celestial_drift",
+        "azure_origins:moonchild_powers/night_vision",
+        "azure_origins:moonchild_powers/starlight_step"
+    ],
+    "icon": {
+        "id": "minecraft:ghast_tear"
+    },
+    "impact": 2,
+    "unchoosable": true
+}

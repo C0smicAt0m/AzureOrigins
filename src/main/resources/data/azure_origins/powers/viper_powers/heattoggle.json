@@ -1,0 +1,32 @@
+{
+    "hidden": true,
+    "condition": {
+        "type": "origins:and",
+        "conditions": [
+            {
+                "type": "origins:sneaking"
+            },
+            {
+                "type": "origins:resource",
+                "resource": "azure_origins:viper_powers/heatvision",
+                "comparison": "==",
+                "compare_to": 0
+            },
+            {
+                "inverted": true,
+                "type": "origins:moving"
+            }
+        ]
+    },
+    "type": "origins:action_over_time",
+    "interval": 1,
+    "entity_action": {
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "origins:trigger_cooldown",
+                "power": "azure_origins:viper_powers/heatvision"
+            }
+        ]
+    }
+}

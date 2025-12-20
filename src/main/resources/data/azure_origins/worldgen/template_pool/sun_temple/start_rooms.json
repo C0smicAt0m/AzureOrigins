@@ -1,0 +1,69 @@
+{
+    "name": "azure_origins:sun_temple/start_rooms",
+    "fallback": "minecraft:empty",
+    "elements": [
+      {
+        "weight": 3,
+        "element": {
+          "element_type": "minecraft:single_pool_element",
+          "projection": "rigid",
+          "location": "azure_origins:sun_temple/start_rooms/startlane_1",
+          "processors": "minecraft:empty"
+        }
+      },
+      {
+        "weight": 3,
+        "element": {
+          "element_type": "minecraft:single_pool_element",
+          "projection": "rigid",
+          "location": "azure_origins:sun_temple/start_rooms/startlane_2",
+          "processors": "minecraft:empty"
+        }
+      },
+      {
+        "weight": 2,
+        "element": {
+          "element_type": "minecraft:single_pool_element",
+          "projection": "rigid",
+          "location": "azure_origins:sun_temple/start_rooms/start3way_1",
+          "processors": "minecraft:empty"
+        }
+      },
+      {
+        "weight": 2,
+        "element": {
+          "element_type": "minecraft:single_pool_element",
+          "projection": "rigid",
+          "location": "azure_origins:sun_temple/start_rooms/start3way_2",
+          "processors": "minecraft:empty"
+        }
+      },
+      {
+        "weight": 2,
+        "element": {
+          "element_type": "minecraft:single_pool_element",
+          "projection": "rigid",
+          "location": "azure_origins:sun_temple/start_rooms/start3way_3",
+          "processors": "minecraft:empty"
+        }
+      },
+      {
+        "weight": 3,
+        "element": {
+          "element_type": "minecraft:single_pool_element",
+          "projection": "rigid",
+          "location": "azure_origins:sun_temple/start_rooms/start4way_1",
+          "processors": "minecraft:empty"
+        }
+      },
+      {
+        "weight": 3,
+        "element": {
+          "element_type": "minecraft:single_pool_element",
+          "projection": "rigid",
+          "location": "azure_origins:sun_temple/start_rooms/start4way_2",
+          "processors": "minecraft:empty"
+        }
+      }
+    ]
+  }

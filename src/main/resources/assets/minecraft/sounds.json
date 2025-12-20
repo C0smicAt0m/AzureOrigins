@@ -1,0 +1,12 @@
+{
+"music_disc.eclipse": {
+	"sounds": [
+		{
+			"name": "records/eclipse",
+			"stream": true,
+			"attenuation_distance": 16,
+			"volume": 0.8
+		}
+	]
+}
+}

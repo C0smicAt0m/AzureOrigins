@@ -1,0 +1,30 @@
+{
+    "name": "Follower of the Moon",
+    "description": "You have less health during the day, and more health during the night.",
+    "type": "origins:multiple",
+    "night_health": {
+        "type": "origins:conditioned_attribute",
+        "condition": {
+            "type": "origins:daytime",
+            "inverted": true
+        },
+        "modifier": {
+            "id": "c2fbfa67-a3f6-4321-a3bd-c2f344a6ec84",
+            "attribute": "minecraft:generic.max_health",
+            "amount": 10,
+            "operation": "ADD_VALUE"
+        }
+    },
+    "day_health": {
+        "type": "origins:conditioned_attribute",
+        "condition": {
+            "type": "origins:daytime"
+        },
+        "modifier": {
+            "id": "1d9a848c-7166-4789-a720-2f584afc9789",
+            "attribute": "minecraft:generic.max_health",
+            "amount": -10,
+            "operation": "ADD_VALUE"
+        }
+    }
+}

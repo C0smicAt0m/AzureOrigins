@@ -1,0 +1,15 @@
+{
+    "name": "Blind Spot",
+    "description": "Players wearing pumpkins are invisible to you.",
+    "type": "origins:prevent_entity_render",
+    "entity_condition": {
+        "type": "origins:equipped_item",
+        "equipment_slot": "head",
+        "item_condition": {
+            "type": "origins:ingredient",
+            "ingredient": {
+                "item": "minecraft:carved_pumpkin"
+            }
+        }
+    }
+}

@@ -1,0 +1,10 @@
+{
+    "name": "Spirit Bar",
+    "description": "Killing enemies rewards you with spirit. Built up spirit can be used to perform magic.",
+    "type": "origins:self_action_on_kill",
+    "entity_action": {
+        "type": "origins:change_resource",
+        "resource": "azure_origins:wendigo_powers/kill_charge",
+        "change": 1
+    }
+}

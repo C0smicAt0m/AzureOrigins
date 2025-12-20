@@ -1,0 +1,6 @@
+{
+    "parent": "item/generated",
+    "textures": {
+        "layer0": "azure_origins:item/caustic_elixir"
+    }
+}

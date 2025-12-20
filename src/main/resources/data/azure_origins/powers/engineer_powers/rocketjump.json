@@ -1,0 +1,14 @@
+{
+    "name": "Rocket Jump",
+    "description": "Launch yourself up to 7 blocks in the air.",
+    "type": "origins:launch",
+    "cooldown": 200,
+    "speed": 1.5,
+    "hud_render": {
+        "should_render": true,
+        "sprite_location": "azure_origins:textures/azureoriginsbars.png",
+        "bar_index": 3
+    },
+    "sound": "minecraft:entity.generic.explode",
+    "key": "secondary"
+}

@@ -1,0 +1,18 @@
+{
+  "name": "Origin",
+  "description": "Select your origin.",
+  "enabled": true,
+  "replace": false,
+  "origins": [
+    "azure_origins:viper",
+    "azure_origins:engineer",
+    "azure_origins:guinea",
+    "azure_origins:moonchild",
+    "azure_origins:equinox",
+    "azure_origins:sunborn",
+    "azure_origins:wendigo",
+    "azure_origins:snake",
+    "azure_origins:serpent",
+    "azure_origins:solar_shroud"
+  ]
+}

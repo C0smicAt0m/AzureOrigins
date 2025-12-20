@@ -1,0 +1,30 @@
+{
+	"display": {
+		"icon": {
+			"id": "rotten_flesh",
+			"components": {
+				"minecraft:custom_model_data": 3870004
+			}
+		},
+		"title": "Lunar Veil",
+		"description": "Absorb the Lunar Shard",
+		"frame": "challenge",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
+	},
+	"parent": "azure_origins:moonchild_transform",
+	"criteria": {
+		"consume_lunar_shard": {
+			"trigger": "minecraft:consume_item",
+			"conditions": {
+				"item": {
+					"items": "rotten_flesh",
+					"components": {
+						"minecraft:custom_model_data": 3870004
+					}
+				}
+			}
+		}
+	}
+}

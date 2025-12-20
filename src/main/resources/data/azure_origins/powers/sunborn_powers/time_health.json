@@ -1,0 +1,30 @@
+{
+    "name": "Follower of the Sun",
+    "description": "You have more health during the day, and less health during the night.",
+    "type": "origins:multiple",
+    "night_health": {
+        "type": "origins:conditioned_attribute",
+        "condition": {
+            "type": "origins:daytime",
+            "inverted": true
+        },
+        "modifier": {
+            "id": "f1e4eeb4-267a-4d79-87ec-b509bd6a8e03",
+            "attribute": "minecraft:generic.max_health",
+            "amount": -8,
+            "operation": "ADD_VALUE"
+        }
+    },
+    "day_health": {
+        "type": "origins:conditioned_attribute",
+        "condition": {
+            "type": "origins:daytime"
+        },
+        "modifier": {
+            "id": "fdfc89e8-7f1e-49e5-902f-986674f0431c",
+            "attribute": "minecraft:generic.max_health",
+            "amount": 8,
+            "operation": "ADD_VALUE"
+        }
+    }
+}

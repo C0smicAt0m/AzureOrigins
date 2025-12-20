@@ -1,0 +1,27 @@
+{
+    "name": "Equinox",
+    "description": "You are a child of the darkest part of the eclipse.",
+    "icon": {
+        "id": "minecraft:clock"
+    },
+    "powers": [
+        "azure_origins:equinox_powers/less_health",
+        "azure_origins:equinox_powers/moonblast",
+        "azure_origins:equinox_powers/sunbeam",
+        "azure_origins:equinox_powers/celestial_drift",
+        "azure_origins:equinox_powers/starlight_step"
+    ],
+    "upgrades": [
+        {
+            "condition": "azure_origins:moonchild_transform",
+            "origin": "azure_origins:moonchild",
+            "announcement": "The power of the moon flows within you. You have transformed into the Moonchild."
+        },
+        {
+            "condition": "azure_origins:sunborn_transform",
+            "origin": "azure_origins:sunborn",
+            "announcement": "The power of the sun flows within you. You have transformed into the Sunborn."
+        }
+    ],
+    "impact": 1
+}
