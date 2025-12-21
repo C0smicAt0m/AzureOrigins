@@ -5,6 +5,10 @@
     "painting.azure_origins.devs.author": "CosmicAtom",
 
     "item.azure_origins.caustic_elixir": "Caustic Elixir",
+    "item.azure_origins.solar_shard": "Solar Shard",
+    "item.azure_origins.lunar_shard": "Lunar Shard",
+    "item.azure_origins.flare_of_helios": "Flare of Helios",
+    "item.azure_origins.surge_of_selene": "Surge of Selene",
 
     "itemgroup.azure_origins.azure_origins_items": "Azure Origins"
 }

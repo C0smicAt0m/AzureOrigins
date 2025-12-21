@@ -1,10 +1,7 @@
 {
   "display": {
     "icon": {
-      "id": "minecraft:rotten_flesh",
-      "components": {
-        "minecraft:custom_model_data": 3870001
-      }
+      "id": "azure_origins:flare_of_helios"
     },
     "title": "Sunborn",
     "description": "Absorb the Flare of Helios",
@@ -19,10 +16,7 @@
       "trigger": "minecraft:consume_item",
       "conditions": {
         "item": {
-          "items": "rotten_flesh",
-          "components": {
-            "minecraft:custom_model_data": 3870001
-          }
+          "items": "azure_origins:flare_of_helios"
         }
       }
     }

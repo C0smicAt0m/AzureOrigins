@@ -1,6 +1,6 @@
 {
     "parent": "minecraft:item/template_music_disc",
     "textures": {
-      "layer0": "minecraft:item/flare_of_helios"
+        "layer0": "azure_origins:item/flare_of_helios"
     }
-  }
+}

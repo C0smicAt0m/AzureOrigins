@@ -1,10 +1,7 @@
 {
 	"display": {
 		"icon": {
-			"id": "rotten_flesh",
-			"components": {
-				"minecraft:custom_model_data": 3870004
-			}
+			"id": "azure_origins:lunar_shard"
 		},
 		"title": "Lunar Veil",
 		"description": "Absorb the Lunar Shard",
@@ -19,10 +16,7 @@
 			"trigger": "minecraft:consume_item",
 			"conditions": {
 				"item": {
-					"items": "rotten_flesh",
-					"components": {
-						"minecraft:custom_model_data": 3870004
-					}
+					"items": "azure_origins:lunar_shard"
 				}
 			}
 		}

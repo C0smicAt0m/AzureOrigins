@@ -1,10 +1,7 @@
 {
   "display": {
     "icon": {
-      "id": "minecraft:rotten_flesh",
-      "components": {
-        "minecraft:custom_model_data": 3870002
-      }
+      "id": "azure_origins:surge_of_selene"
     },
     "title": "Moonchild",
     "description": "Absorb the Surge of Selene",
@@ -15,14 +12,11 @@
   },
   "parent": "azure_origins:moon_temple",
   "criteria": {
-    "eat_flare": {
+    "eat_surge": {
       "trigger": "minecraft:consume_item",
       "conditions": {
         "item": {
-          "items": "rotten_flesh",
-          "components": {
-            "minecraft:custom_model_data": 3870002
-          }
+          "items": "azure_origins:surge_of_selene"
         }
       }
     }

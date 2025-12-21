@@ -1,17 +1,14 @@
 {
 	"display": {
 		"icon": {
-			"id": "rotten_flesh",
-			"components": {
-				"minecraft:custom_model_data": 3870003
-			}
+			"id": "azure_origins:solar_shard"
 		},
 		"title": "Solar Shroud",
 		"description": "Absorb the Solar Shard",
 		"frame": "challenge",
 		"show_toast": true,
 		"announce_to_chat": true,
-		"hidden": false
+		"hidden": true
 	},
 	"parent": "azure_origins:sunborn_transform",
 	"criteria": {
@@ -19,10 +16,7 @@
 			"trigger": "minecraft:consume_item",
 			"conditions": {
 				"item": {
-					"items": "rotten_flesh",
-					"components": {
-						"minecraft:custom_model_data": 3870003
-					}
+					"items": "azure_origins:solar_shard"
 				}
 			}
 		}
