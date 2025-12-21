@@ -1,14 +1,23 @@
 package net.cosmic.azure_origins.item.custom;
 
-import net.minecraft.entity.player.PlayerEntity;
+import net.cosmic.azure_origins.sound.ModSounds;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
-import net.minecraft.util.Hand;
-import net.minecraft.util.TypedActionResult;
-import net.minecraft.world.World;
+import net.minecraft.sound.SoundEvent;
+import net.minecraft.util.UseAction;
 
 public class LunarShard extends Item {
     public LunarShard(Settings settings) {
         super(settings);
+    }
+
+    @Override
+    public UseAction getUseAction(ItemStack stack) {
+        return UseAction.NONE;
+    }
+
+    @Override
+    public SoundEvent getEatSound() {
+        return ModSounds.CONSUME_MAGIC_ITEM;
     }
 }

@@ -10,5 +10,7 @@
     "item.azure_origins.flare_of_helios": "Flare of Helios",
     "item.azure_origins.surge_of_selene": "Surge of Selene",
 
-    "itemgroup.azure_origins.azure_origins_items": "Azure Origins"
+    "itemgroup.azure_origins.azure_origins_items": "Azure Origins",
+
+    "sounds.azure_origins.consume_magic_item": "Player consumes magic item"
 }

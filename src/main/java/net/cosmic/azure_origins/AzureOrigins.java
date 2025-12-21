@@ -2,6 +2,7 @@ package net.cosmic.azure_origins;
 
 import net.cosmic.azure_origins.item.ModItemGroups;
 import net.cosmic.azure_origins.item.ModItems;
+import net.cosmic.azure_origins.sound.ModSounds;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -19,5 +20,6 @@ public class AzureOrigins implements ModInitializer {
 	public void onInitialize() {
 		ModItems.registerModItems();
 		ModItemGroups.registerModItemGroups();
+		ModSounds.registerSounds();
 	}
 }

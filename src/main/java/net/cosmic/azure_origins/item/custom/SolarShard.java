@@ -1,20 +1,25 @@
 package net.cosmic.azure_origins.item.custom;
 
-import net.minecraft.advancement.Advancement;
-import net.minecraft.advancement.AdvancementEntry;
-import net.minecraft.advancement.AdvancementProgress;
-import net.minecraft.advancement.PlayerAdvancementTracker;
-import net.minecraft.entity.LivingEntity;
-import net.minecraft.entity.player.PlayerEntity;
+import net.cosmic.azure_origins.sound.ModSounds;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
-import net.minecraft.server.MinecraftServer;
-import net.minecraft.server.network.ServerPlayerEntity;
+import net.minecraft.sound.SoundEvent;
 import net.minecraft.util.*;
-import net.minecraft.world.World;
 
 public class SolarShard extends Item {
     public SolarShard(Settings settings) {
         super(settings);
     }
+
+    @Override
+    public UseAction getUseAction(ItemStack stack) {
+        return UseAction.NONE;
+    }
+
+    @Override
+    public SoundEvent getEatSound() {
+        return ModSounds.CONSUME_MAGIC_ITEM;
+    }
+
+
 }

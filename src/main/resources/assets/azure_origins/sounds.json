@@ -1,0 +1,8 @@
+{
+  "consume_magic_item": {
+    "subtitle": "sounds.azure_origins.consume_magic_item",
+    "sounds": [
+      "azure_origins:consume_magic_item"
+    ]
+  }
+}
