@@ -4,5 +4,13 @@
     "sounds": [
       "azure_origins:consume_magic_item"
     ]
+  },
+  "eclipse": {
+    "sounds": [
+      {
+        "name": "azure_origins:eclipse",
+        "stream": true
+      }
+    ]
   }
 }

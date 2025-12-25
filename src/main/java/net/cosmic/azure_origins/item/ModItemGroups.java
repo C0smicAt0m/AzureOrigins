@@ -20,6 +20,8 @@ public class ModItemGroups {
                 entries.add(ModItems.LUNAR_SHARD);
                 entries.add(ModItems.FLARE_OF_HELIOS);
                 entries.add(ModItems.SURGE_OF_SELENE);
+                entries.add(ModItems.ECLIPSE_MUSIC_DISC);
+                entries.add(ModItems.GREEN_SPECTRAL_ARROW);
             })
             .build());
 

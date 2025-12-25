@@ -1,8 +1,10 @@
 {
     "comparator_output": 15,
-    "description": "CosmicAtom - Eclipse",
+    "description": {
+        "translate": "item.azure_origins.eclipse_music_disc.desc"
+    },
     "length_in_seconds": 103.0,
     "sound_event": {
-        "sound_id": "minecraft:music_disc.eclipse"
+        "sound_id": "azure_origins:eclipse"
     }
 }

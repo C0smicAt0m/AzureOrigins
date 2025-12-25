@@ -1,5 +1,6 @@
 package net.cosmic.azure_origins;
 
+import net.cosmic.azure_origins.entity.ModEntities;
 import net.cosmic.azure_origins.item.ModItemGroups;
 import net.cosmic.azure_origins.item.ModItems;
 import net.cosmic.azure_origins.sound.ModSounds;
@@ -21,5 +22,6 @@ public class AzureOrigins implements ModInitializer {
 		ModItems.registerModItems();
 		ModItemGroups.registerModItemGroups();
 		ModSounds.registerSounds();
+		ModEntities.registerModEntities();
 	}
 }

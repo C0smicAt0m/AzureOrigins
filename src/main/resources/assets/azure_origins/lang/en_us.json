@@ -9,6 +9,9 @@
     "item.azure_origins.lunar_shard": "Lunar Shard",
     "item.azure_origins.flare_of_helios": "Flare of Helios",
     "item.azure_origins.surge_of_selene": "Surge of Selene",
+    "item.azure_origins.eclipse_music_disc": "Music Disc",
+    "item.azure_origins.eclipse_music_disc.desc": "CosmicAtom - Eclipse",
+    "item.azure_origins.green_spectral_arrow": "Green Spectral Arrow",
 
     "itemgroup.azure_origins.azure_origins_items": "Azure Origins",
 

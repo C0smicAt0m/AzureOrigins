@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "minecraft:item/green_spectral_arrow"
+    "layer0": "azure_origins:item/eclipse_music_disc"
   }
 }
