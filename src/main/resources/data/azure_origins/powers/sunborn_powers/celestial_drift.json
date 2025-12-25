@@ -7,11 +7,13 @@
         "take_fall_damage": false,
         "condition": {
             "type": "origins:equipped_item",
-                "equipment_slot": "mainhand",
-                "item_condition": {
-                    "type": "origins:custom_data",
-                    "nbt": "{nebula_glider: 1b}"
+            "equipment_slot": "mainhand",
+            "item_condition": {
+                "type": "origins:ingredient",
+                "ingredient": {
+                    "item": "azure_origins:nebula_glider"
                 }
+            }
         }
     },
     "slow_fall": {
@@ -28,8 +30,10 @@
                     "type": "origins:equipped_item",
                     "equipment_slot": "mainhand",
                     "item_condition": {
-                        "type": "origins:custom_data",
-                        "nbt": "{nebula_glider: 1b}"
+                        "type": "origins:ingredient",
+                        "ingredient": {
+                            "item": "azure_origins:nebula_glider"
+                        }
                     }
                 }
             ]
@@ -38,16 +42,18 @@
     "fast_air": {
         "type": "origins:modify_air_speed",
         "modifier": {
-          "operation": "multiply_total_multiplicative",
-          "amount": 0.8
+            "operation": "multiply_total_multiplicative",
+            "amount": 0.8
         },
         "condition": {
             "type": "origins:equipped_item",
-                "equipment_slot": "mainhand",
-                "item_condition": {
-                    "type": "origins:custom_data",
-                    "nbt": "{nebula_glider: 1b}"
+            "equipment_slot": "mainhand",
+            "item_condition": {
+                "type": "origins:ingredient",
+                "ingredient": {
+                    "item": "azure_origins:nebula_glider"
                 }
+            }
         }
     }
 }

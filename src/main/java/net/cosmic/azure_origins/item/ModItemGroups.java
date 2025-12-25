@@ -22,6 +22,7 @@ public class ModItemGroups {
                 entries.add(ModItems.SURGE_OF_SELENE);
                 entries.add(ModItems.ECLIPSE_MUSIC_DISC);
                 entries.add(ModItems.GREEN_SPECTRAL_ARROW);
+                entries.add(ModItems.NEBULA_GLIDER);
             })
             .build());
 

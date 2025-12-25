@@ -20,6 +20,7 @@ public class ModItems {
     public static final Item SURGE_OF_SELENE = registerItem("surge_of_selene", new SurgeOfSelene(new Item.Settings().food(ModFoodComponents.SURGE_OF_SELENE_FOOD).maxCount(1)));
     public static final Item ECLIPSE_MUSIC_DISC = registerItem("eclipse_music_disc", new Item(new Item.Settings().jukeboxPlayable(ModSounds.ECLIPSE_KEY).maxCount(1)));
     public static final Item GREEN_SPECTRAL_ARROW = registerItem("green_spectral_arrow", new GreenSpectralArrowItem(new Item.Settings()));
+    public static final Item NEBULA_GLIDER = registerItem("nebula_glider", new Item(new Item.Settings()));
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(AzureOrigins.MOD_ID, name), item);

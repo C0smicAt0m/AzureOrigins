@@ -12,8 +12,11 @@
     "item.azure_origins.eclipse_music_disc": "Music Disc",
     "item.azure_origins.eclipse_music_disc.desc": "CosmicAtom - Eclipse",
     "item.azure_origins.green_spectral_arrow": "Green Spectral Arrow",
+    "item.azure_origins.nebula_glider": "Nebula Glider",
 
     "itemgroup.azure_origins.azure_origins_items": "Azure Origins",
 
-    "sounds.azure_origins.consume_magic_item": "Player consumes magic item"
+    "sounds.azure_origins.consume_magic_item": "Using Magic Item",
+
+    "entity.azure_origins.green_spectral_arrow": "Green Spectral Arrow"
 }
