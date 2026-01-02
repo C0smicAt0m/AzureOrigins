@@ -22,7 +22,7 @@
 			"net.cosmic.azure_origins.AzureOriginsDataGenerator"
 		],
 		"client": [
-			"net.cosmic.azure_origins.AzureOriginsClient"
+          "net.cosmic.azure_origins.client.AzureOriginsClient"
 		]
 	},
 	"mixins": [

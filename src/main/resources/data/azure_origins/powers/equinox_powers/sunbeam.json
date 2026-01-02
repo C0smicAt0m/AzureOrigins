@@ -1,11 +1,7 @@
 {
     "name": "Sunbeam",
     "description": "Fire a weak blast of solar energy.",
-    "type": "origins:active_self",
-    "entity_action": {
-        "type": "origins:execute_command",
-        "command": "function azure_origins:summon_sunbeam"
-    },
+    "type": "origins:fire_projectile",
     "cooldown": 300,
     "hud_render": {
         "should_render": true,
@@ -15,5 +11,10 @@
     "key": {
         "key": "secondary",
         "continuous": false
-    }
+    },
+    "count": 1,
+    "speed": 1.0,
+    "divergence": 0.0,
+    "sound": "minecraft:item.firecharge.use",
+    "entity_type": "azure_origins:sunbeam"
 }

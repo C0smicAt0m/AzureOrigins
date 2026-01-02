@@ -13,8 +13,8 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Vec3d;
 import net.minecraft.world.World;
 
-public class Moonblast extends ProjectileEntity {
-    public Moonblast(EntityType<? extends ProjectileEntity> entityType, World world) {
+public class Sunbeam extends ProjectileEntity {
+    public Sunbeam(EntityType<? extends ProjectileEntity> entityType, World world) {
         super(entityType, world);
     }
 
@@ -42,7 +42,7 @@ public class Moonblast extends ProjectileEntity {
                 double dz = (random.nextDouble() - 0.5) * 0.5;
 
                 getWorld().addParticle(
-                        ParticleTypes.GLOW,
+                        ParticleTypes.FLAME,
                         getX() + dx,
                         getY() + dy + 0.25,
                         getZ() + dz,
@@ -75,10 +75,11 @@ public class Moonblast extends ProjectileEntity {
         super.onEntityHit(entityHitResult);
 
         Entity entity = entityHitResult.getEntity();
-        entity.damage(this.getDamageSources().sonicBoom(this.getOwner()), 5.0F);
+        entity.damage(this.getDamageSources().explosion(this, this.getOwner()), 1.0F);
+        entity.setOnFireFor(8);
 
         BlockPos pos = this.getBlockPos();
-        getWorld().playSound(null, pos, SoundEvents.ITEM_MACE_SMASH_AIR, SoundCategory.PLAYERS, 1.0F, (0.8F + getWorld().random.nextFloat() * 0.4F));
+        getWorld().playSound(null, pos, SoundEvents.ENTITY_FIREWORK_ROCKET_BLAST, SoundCategory.PLAYERS, 1.0F, (0.8F + getWorld().random.nextFloat() * 0.4F));
     }
 
     @Override

@@ -1,6 +1,6 @@
 package net.cosmic.azure_origins.client.renderer.model;
 
-import net.cosmic.azure_origins.entity.custom.Moonblast;
+import net.cosmic.azure_origins.entity.custom.Sunbeam;
 import net.minecraft.client.model.*;
 import net.minecraft.client.render.VertexConsumer;
 import net.minecraft.client.render.entity.model.EntityModel;
@@ -9,9 +9,9 @@ import net.minecraft.client.util.math.MatrixStack;
 // Made with Blockbench 5.0.7
 // Exported for Minecraft version 1.17+ for Yarn
 // Paste this class into your mod and generate all required imports
-public class MoonblastModel extends EntityModel<Moonblast> {
+public class SunbeamModel extends EntityModel<Sunbeam> {
 	private final ModelPart bb_main;
-	public MoonblastModel(ModelPart root) {
+	public SunbeamModel(ModelPart root) {
 		this.bb_main = root.getChild("bb_main");
 	}
 	public static TexturedModelData getTexturedModelData() {
@@ -30,12 +30,12 @@ public class MoonblastModel extends EntityModel<Moonblast> {
 	}
 
 	@Override
-	public void setAngles(Moonblast entity, float limbAngle, float limbDistance, float animationProgress, float headYaw, float headPitch) {
-
+	public void render(MatrixStack matrices, VertexConsumer vertexConsumer, int light, int overlay, int color) {
+		bb_main.render(matrices, vertexConsumer, light, overlay, color);
 	}
 
 	@Override
-	public void render(MatrixStack matrices, VertexConsumer vertices, int light, int overlay, int color) {
-		bb_main.render(matrices, vertices, light, overlay, color);
+	public void setAngles(Sunbeam entity, float limbAngle, float limbDistance, float animationProgress, float headYaw, float headPitch) {
+
 	}
 }

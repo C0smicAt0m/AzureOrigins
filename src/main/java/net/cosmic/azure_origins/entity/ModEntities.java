@@ -3,6 +3,7 @@ package net.cosmic.azure_origins.entity;
 import net.cosmic.azure_origins.AzureOrigins;
 import net.cosmic.azure_origins.entity.custom.GreenSpectralArrow;
 import net.cosmic.azure_origins.entity.custom.Moonblast;
+import net.cosmic.azure_origins.entity.custom.Sunbeam;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.SpawnGroup;
 import net.minecraft.registry.Registries;
@@ -39,6 +40,21 @@ public class ModEntities {
                             .maxTrackingRange(4)
                             .trackingTickInterval(20)
                             .build("moonblast")
+            );
+
+    public static final EntityType<Sunbeam> SUNBEAM =
+            Registry.register(
+                    Registries.ENTITY_TYPE,
+                    Identifier.of(AzureOrigins.MOD_ID, "sunbeam"),
+                    EntityType.Builder
+                            .create(
+                                    Sunbeam::new,
+                                    SpawnGroup.MISC
+                            )
+                            .dimensions(0.5F, 0.5F)
+                            .maxTrackingRange(4)
+                            .trackingTickInterval(20)
+                            .build("sunbeam")
             );
 
     public static void registerModEntities() {

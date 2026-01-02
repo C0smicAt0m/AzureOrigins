@@ -1,8 +1,8 @@
 package net.cosmic.azure_origins.client.renderer;
 
 import net.cosmic.azure_origins.client.AzureOriginsClient;
-import net.cosmic.azure_origins.client.renderer.model.MoonblastModel;
-import net.cosmic.azure_origins.entity.custom.Moonblast;
+import net.cosmic.azure_origins.client.renderer.model.SunbeamModel;
+import net.cosmic.azure_origins.entity.custom.Sunbeam;
 import net.minecraft.client.render.OverlayTexture;
 import net.minecraft.client.render.RenderLayer;
 import net.minecraft.client.render.VertexConsumer;
@@ -14,21 +14,21 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.math.RotationAxis;
 import net.minecraft.util.math.Vec3d;
 
-public class MoonblastRenderer extends EntityRenderer<Moonblast> {
+public class SunbeamRenderer extends EntityRenderer<Sunbeam> {
 
     private static final Identifier TEXTURE =
-            Identifier.of("azure_origins", "textures/entity/projectiles/moonblast.png");
+            Identifier.of("azure_origins", "textures/entity/projectiles/sunbeam.png");
 
-    private final MoonblastModel model;
+    private final SunbeamModel model;
 
-    public MoonblastRenderer(EntityRendererFactory.Context context) {
+    public SunbeamRenderer(EntityRendererFactory.Context context) {
         super(context);
         // Use the model layer registered in the client initializer
-        this.model = new MoonblastModel(context.getPart(AzureOriginsClient.MOONBLAST_LAYER));
+        this.model = new SunbeamModel(context.getPart(AzureOriginsClient.SUNBEAM_LAYER));
     }
 
     @Override
-    public void render(Moonblast entity, float yaw, float tickDelta, MatrixStack matrices,
+    public void render(Sunbeam entity, float yaw, float tickDelta, MatrixStack matrices,
                        VertexConsumerProvider vertexConsumers, int light) {
 
         matrices.push();
@@ -67,7 +67,7 @@ public class MoonblastRenderer extends EntityRenderer<Moonblast> {
     }
 
     @Override
-    public Identifier getTexture(Moonblast entity) {
+    public Identifier getTexture(Sunbeam entity) {
         return TEXTURE;
     }
 }
