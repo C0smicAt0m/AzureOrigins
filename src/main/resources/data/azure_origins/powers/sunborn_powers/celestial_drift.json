@@ -1,6 +1,31 @@
 {
     "name": "Nebula Glider",
     "description": "As long as you hold the Nebula Glider, you can drift freely though the air.",
+    "badges": [
+        {
+            "type": "origins:crafting_recipe",
+            "sprite": "origins:textures/gui/badge/recipe.png",
+            "recipe": {
+                "id": "azure_origins:nebula_glider",
+                "type": "minecraft:crafting_shaped",
+                "key": {
+                    "#": {
+                        "item": "minecraft:stick"
+                    },
+                    "X": {
+                        "tag": "minecraft:wool"
+                    }
+                },
+                "pattern": [
+                    "XXX",
+                    "# #"
+                ],
+                "result": {
+                    "id": "azure_origins:nebula_glider"
+                }
+            }
+        }
+    ],
     "type": "origins:multiple",
     "no_fall_damage": {
         "type": "origins:modify_falling",

@@ -2,6 +2,7 @@ package net.cosmic.azure_origins.entity;
 
 import net.cosmic.azure_origins.AzureOrigins;
 import net.cosmic.azure_origins.entity.custom.GreenSpectralArrow;
+import net.cosmic.azure_origins.entity.custom.Moonblast;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.SpawnGroup;
 import net.minecraft.registry.Registries;
@@ -23,6 +24,21 @@ public class ModEntities {
                             .maxTrackingRange(4)
                             .trackingTickInterval(20)
                             .build("green_spectral_arrow")
+            );
+
+    public static final EntityType<Moonblast> MOONBLAST =
+            Registry.register(
+                    Registries.ENTITY_TYPE,
+                    Identifier.of(AzureOrigins.MOD_ID, "moonblast"),
+                    EntityType.Builder
+                            .create(
+                                    Moonblast::new,
+                                    SpawnGroup.MISC
+                            )
+                            .dimensions(0.5F, 0.5F)
+                            .maxTrackingRange(4)
+                            .trackingTickInterval(20)
+                            .build("moonblast")
             );
 
     public static void registerModEntities() {

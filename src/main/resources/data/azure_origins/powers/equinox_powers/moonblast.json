@@ -1,11 +1,7 @@
 {
     "name": "Moonblast",
     "description": "Fire a weak blast of lunar energy.",
-    "type": "origins:active_self",
-    "entity_action": {
-        "type": "origins:execute_command",
-        "command": "function azure_origins:summon_arcane_blast"
-    },
+    "type": "origins:fire_projectile",
     "cooldown": 100,
     "hud_render": {
         "should_render": true,
@@ -15,5 +11,10 @@
     "key": {
         "key": "primary",
         "continuous": false
-    }
+    },
+    "count": 1,
+    "speed": 1.0,
+    "divergence": 0.0,
+    "sound": "minecraft:item.trident.return",
+    "entity_type": "azure_origins:moonblast"
 }

@@ -249,22 +249,8 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:music_disc_cat",
-          "weight": 1,
-          "functions": [
-            {
-              "function": "minecraft:set_custom_model_data",
-              "value": 3870001
-            },
-            {
-              "function": "minecraft:set_components",
-              "components": {
-                "minecraft:jukebox_playable": {
-                  "song": "azure_origins:eclipse"
-                }
-              }
-            }
-          ]
+          "name": "azure_origins:eclipse_music_disc",
+          "weight": 1
         }
       ],
       "conditions": [
