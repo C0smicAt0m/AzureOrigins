@@ -19,6 +19,7 @@ public class GreenSpectralArrow extends SpectralArrowEntity {
     public GreenSpectralArrow(World world, LivingEntity owner) {
         super(ModEntities.GREEN_SPECTRAL_ARROW, world);  // Only type + world
         this.setOwner(owner);                            // Set the shooter
+        this.setPos(owner.getX(), owner.getEyeY() - 0.1f, owner.getZ());
     }
 
     @Override
