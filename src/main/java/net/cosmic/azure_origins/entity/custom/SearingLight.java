@@ -14,8 +14,13 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Vec3d;
 import net.minecraft.world.World;
 
-public class Sunbeam extends ProjectileEntity {
-    public Sunbeam(EntityType<? extends ProjectileEntity> entityType, World world) {
+import java.util.HashSet;
+import java.util.Set;
+
+public class SearingLight extends ProjectileEntity {
+    private final Set<Integer> hitEntities = new HashSet<>();
+
+    public SearingLight(EntityType<? extends ProjectileEntity> entityType, World world) {
         super(entityType, world);
     }
 
@@ -76,8 +81,15 @@ public class Sunbeam extends ProjectileEntity {
         super.onEntityHit(entityHitResult);
 
         Entity entity = entityHitResult.getEntity();
-        entity.damage(this.getDamageSources().create(ModDamageTypes.SOLAR, this, this.getOwner()), 1.0F);
-        entity.setOnFireFor(8);
+
+        if (hitEntities.contains(entity.getId())) {
+            return;
+        }
+
+        hitEntities.add(entity.getId());
+
+        entity.damage(this.getDamageSources().create(ModDamageTypes.SOLAR, this, this.getOwner()), 3.0F);
+        entity.setOnFireFor(12);
 
         BlockPos pos = this.getBlockPos();
         getWorld().playSound(null, pos, SoundEvents.ENTITY_FIREWORK_ROCKET_BLAST, SoundCategory.PLAYERS, 1.0F, (0.8F + getWorld().random.nextFloat() * 0.4F));
@@ -91,7 +103,7 @@ public class Sunbeam extends ProjectileEntity {
             this.onEntityHit((EntityHitResult) hitResult);
         }
 
-        if (!getWorld().isClient) {
+        else if (!getWorld().isClient) {
             this.discard();
         }
     }

@@ -18,5 +18,14 @@
 
     "sounds.azure_origins.consume_magic_item": "Using Magic Item",
 
-    "entity.azure_origins.green_spectral_arrow": "Green Spectral Arrow"
+    "entity.azure_origins.green_spectral_arrow": "Green Spectral Arrow",
+    "entity.azure_origins.moonblast": "Moonblast",
+    "entity.azure_origins.lunashock": "Lunashock",
+    "entity.azure_origins.sunbeam": "Sunbeam",
+    "entity.azure_origins.searing_light": "Searing Light",
+
+    "death.attack.lunar": "%1$s was reduced to stardust by lunar energy",
+    "death.attack.lunar.player": "%1$s was reduced to stardust by %2$s's lunar energy",
+    "death.attack.solar": "%1$s was reduced to ashes by solar energy",
+    "death.attack.solar.player": "%1$s was reduced to ashes by %2$s's solar energy"
 }

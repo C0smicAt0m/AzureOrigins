@@ -1,9 +1,7 @@
 package net.cosmic.azure_origins.entity;
 
 import net.cosmic.azure_origins.AzureOrigins;
-import net.cosmic.azure_origins.entity.custom.GreenSpectralArrow;
-import net.cosmic.azure_origins.entity.custom.Moonblast;
-import net.cosmic.azure_origins.entity.custom.Sunbeam;
+import net.cosmic.azure_origins.entity.custom.*;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.SpawnGroup;
 import net.minecraft.registry.Registries;
@@ -42,6 +40,21 @@ public class ModEntities {
                             .build("moonblast")
             );
 
+    public static final EntityType<Lunashock> LUNASHOCK =
+            Registry.register(
+                    Registries.ENTITY_TYPE,
+                    Identifier.of(AzureOrigins.MOD_ID, "lunashock"),
+                    EntityType.Builder
+                            .create(
+                                    Lunashock::new,
+                                    SpawnGroup.MISC
+                            )
+                            .dimensions(0.5F, 0.5F)
+                            .maxTrackingRange(4)
+                            .trackingTickInterval(20)
+                            .build("lunashock")
+            );
+
     public static final EntityType<Sunbeam> SUNBEAM =
             Registry.register(
                     Registries.ENTITY_TYPE,
@@ -55,6 +68,21 @@ public class ModEntities {
                             .maxTrackingRange(4)
                             .trackingTickInterval(20)
                             .build("sunbeam")
+            );
+
+    public static final EntityType<SearingLight> SEARING_LIGHT =
+            Registry.register(
+                    Registries.ENTITY_TYPE,
+                    Identifier.of(AzureOrigins.MOD_ID, "searing_light"),
+                    EntityType.Builder
+                            .create(
+                                    SearingLight::new,
+                                    SpawnGroup.MISC
+                            )
+                            .dimensions(0.5F, 0.5F)
+                            .maxTrackingRange(4)
+                            .trackingTickInterval(20)
+                            .build("searing_light")
             );
 
     public static void registerModEntities() {

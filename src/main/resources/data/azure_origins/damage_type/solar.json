@@ -1,0 +1,9 @@
+{
+  "message_id": "solar",
+  "exhaustion": 0.0,
+  "scaling": "never",
+  "effects": "hurt",
+  "is_magic": true,
+  "bypasses_armor": false,
+  "bypasses_enchantments": false
+}

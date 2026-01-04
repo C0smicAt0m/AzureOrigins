@@ -1,5 +1,6 @@
 package net.cosmic.azure_origins.entity.custom;
 
+import net.cosmic.azure_origins.damage.ModDamageTypes;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.data.DataTracker;
@@ -75,7 +76,7 @@ public class Moonblast extends ProjectileEntity {
         super.onEntityHit(entityHitResult);
 
         Entity entity = entityHitResult.getEntity();
-        entity.damage(this.getDamageSources().sonicBoom(this.getOwner()), 5.0F);
+        entity.damage(this.getDamageSources().create(ModDamageTypes.LUNAR, this, this.getOwner()), 5.0F);
 
         BlockPos pos = this.getBlockPos();
         getWorld().playSound(null, pos, SoundEvents.ITEM_MACE_SMASH_AIR, SoundCategory.PLAYERS, 1.0F, (0.8F + getWorld().random.nextFloat() * 0.4F));
