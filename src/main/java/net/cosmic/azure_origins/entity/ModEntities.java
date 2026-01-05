@@ -85,6 +85,21 @@ public class ModEntities {
                             .build("searing_light")
             );
 
+    public static final EntityType<Daybreak> DAYBREAK =
+            Registry.register(
+                    Registries.ENTITY_TYPE,
+                    Identifier.of(AzureOrigins.MOD_ID, "daybreak"),
+                    EntityType.Builder
+                            .create(
+                                    Daybreak::new,
+                                    SpawnGroup.MISC
+                            )
+                            .dimensions(0.5F, 0.5F)
+                            .maxTrackingRange(4)
+                            .trackingTickInterval(20)
+                            .build("daybreak")
+            );
+
     public static void registerModEntities() {
         AzureOrigins.LOGGER.info("Registering Mod Entities for " + AzureOrigins.MOD_ID);
     }

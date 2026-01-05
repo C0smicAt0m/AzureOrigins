@@ -1,10 +1,7 @@
 package net.cosmic.azure_origins.client;
 
 import net.cosmic.azure_origins.client.renderer.*;
-import net.cosmic.azure_origins.client.renderer.model.LunashockModel;
-import net.cosmic.azure_origins.client.renderer.model.MoonblastModel;
-import net.cosmic.azure_origins.client.renderer.model.SearingLightModel;
-import net.cosmic.azure_origins.client.renderer.model.SunbeamModel;
+import net.cosmic.azure_origins.client.renderer.model.*;
 import net.cosmic.azure_origins.entity.ModEntities;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.client.rendering.v1.EntityModelLayerRegistry;
@@ -38,6 +35,12 @@ public class AzureOriginsClient implements ClientModInitializer {
                     "main"
             );
 
+    public static final EntityModelLayer DAYBREAK_LAYER =
+            new EntityModelLayer(
+                    Identifier.of("azure_origins", "daybreak"),
+                    "main"
+            );
+
     @Override
     public void onInitializeClient() {
         EntityRendererRegistry.register(ModEntities.GREEN_SPECTRAL_ARROW, GreenSpectralArrowEntityRenderer::new);
@@ -53,5 +56,8 @@ public class AzureOriginsClient implements ClientModInitializer {
 
         EntityModelLayerRegistry.registerModelLayer(SEARING_LIGHT_LAYER, SearingLightModel::getTexturedModelData);
         EntityRendererRegistry.register(ModEntities.SEARING_LIGHT, SearingLightRenderer::new);
+
+        EntityModelLayerRegistry.registerModelLayer(DAYBREAK_LAYER, DaybreakModel::getTexturedModelData);
+        EntityRendererRegistry.register(ModEntities.DAYBREAK, DaybreakRenderer::new);
     }
 }

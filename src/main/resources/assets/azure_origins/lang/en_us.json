@@ -23,6 +23,7 @@
     "entity.azure_origins.lunashock": "Lunashock",
     "entity.azure_origins.sunbeam": "Sunbeam",
     "entity.azure_origins.searing_light": "Searing Light",
+    "entity.azure_origins.daybreak": "Daybreak",
 
     "death.attack.lunar": "%1$s was reduced to stardust by lunar energy",
     "death.attack.lunar.player": "%1$s was reduced to stardust by %2$s's lunar energy",

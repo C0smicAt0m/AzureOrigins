@@ -70,7 +70,7 @@ public class SearingLight extends ProjectileEntity {
                 this.onCollision(hitResult);
             }
             // Lifetime limit
-            if (this.age > 80) {
+            if (this.age > 100) {
                 discard();
             }
         }
@@ -113,5 +113,11 @@ public class SearingLight extends ProjectileEntity {
         Vec3d dir = Vec3d.fromPolar(pitch, yaw).normalize();
         this.setVelocity(dir.multiply(speed));
         this.velocityDirty = true;
+    }
+
+    @Override
+    protected boolean canHit(Entity entity) {
+        if (entity == getOwner()) return false;
+        return super.canHit(entity);
     }
 }

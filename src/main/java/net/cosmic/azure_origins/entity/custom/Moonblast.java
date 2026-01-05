@@ -101,4 +101,10 @@ public class Moonblast extends ProjectileEntity {
         this.setVelocity(dir.multiply(speed));
         this.velocityDirty = true;
     }
+
+    @Override
+    protected boolean canHit(Entity entity) {
+        if (entity == getOwner()) return false;
+        return super.canHit(entity);
+    }
 }
