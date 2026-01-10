@@ -17,6 +17,7 @@
     "itemgroup.azure_origins.azure_origins_items": "Azure Origins",
 
     "sounds.azure_origins.consume_magic_item": "Using Magic Item",
+    "sounds.azure_origins.heartbeat": "Heart Beating",
 
     "entity.azure_origins.green_spectral_arrow": "Green Spectral Arrow",
     "entity.azure_origins.moonblast": "Moonblast",

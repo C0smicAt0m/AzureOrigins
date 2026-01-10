@@ -1,0 +1,24 @@
+{
+  "hidden": true,
+  "type": "origins:multiple",
+  "shader": {
+    "type": "origins:shader",
+    "shader": "azure_origins:shaders/post/solar_shader.json",
+    "toggleable": false,
+    "condition": {
+      "type": "origins:resource",
+      "resource": "azure_origins:sunborn_powers/thermal_spike/use_shader",
+      "comparison": "==",
+      "compare_to": 1
+    }
+  },
+  "shake": {
+    "type": "origins:shaking",
+    "condition": {
+      "type": "origins:resource",
+      "resource": "azure_origins:sunborn_powers/thermal_spike/use_shader",
+      "comparison": "==",
+      "compare_to": 1
+    }
+  }
+}

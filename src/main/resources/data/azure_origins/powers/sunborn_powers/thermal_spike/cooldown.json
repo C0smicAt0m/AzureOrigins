@@ -1,0 +1,10 @@
+{
+  "hidden": true,
+  "type": "origins:cooldown",
+  "cooldown": 1200,
+  "hud_render": {
+    "should_render": true,
+    "sprite_location": "azure_origins:textures/azureoriginsbars.png",
+    "bar_index": 6
+  }
+}

@@ -5,6 +5,12 @@
       "azure_origins:consume_magic_item"
     ]
   },
+  "heartbeat": {
+    "subtitle": "sounds.azure_origins.heartbeat",
+    "sounds": [
+      "azure_origins:heartbeat"
+    ]
+  },
   "eclipse": {
     "sounds": [
       {

@@ -1,0 +1,35 @@
+{
+  "targets": [
+    "swap"
+  ],
+  "passes": [
+    {
+      "name": "azure_origins:color_pulse",
+      "intarget": "minecraft:main",
+      "outtarget": "swap",
+      "uniforms": [
+        {
+          "name": "Color",
+          "values": [1.0, 0.2, 0.0, 1.0]
+        },
+        {
+          "name": "Strength",
+          "values": [1.0]
+        },
+        {
+          "name": "PulseOffset",
+          "values": [0.2]
+        },
+        {
+          "name": "Interval",
+          "values": [1.65]
+        }
+      ]
+    },
+    {
+      "name": "blit",
+      "intarget": "swap",
+      "outtarget": "minecraft:main"
+    }
+  ]
+}

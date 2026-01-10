@@ -1,0 +1,9 @@
+{
+  "name": "Thermal Spike",
+  "description": "Cauterize your wounds. Rapidly lose health, but be healed back with extra and explode after a short delay. Requires at least 7 hearts to use.",
+  "type": "origins:toggle",
+  "key": {
+    "key": ""
+  },
+  "active_by_default": false
+}

@@ -4,8 +4,16 @@
     "powers": [
         "azure_origins:sunborn_powers/time_health",
         "azure_origins:sunborn_powers/searing_light",
+        "azure_origins:sunborn_powers/thermal_spike/toggle",
         "azure_origins:sunborn_powers/celestial_drift",
-        "azure_origins:sunborn_powers/starlight_step"
+        "azure_origins:sunborn_powers/starlight_step",
+        "azure_origins:sunborn_powers/thermal_spike/damage",
+        "azure_origins:sunborn_powers/thermal_spike/can_heal",
+        "azure_origins:sunborn_powers/thermal_spike/cooldown",
+        "azure_origins:sunborn_powers/thermal_spike/visual",
+        "azure_origins:sunborn_powers/thermal_spike/use_shader",
+        "azure_origins:sunborn_powers/thermal_spike/on_death",
+        "azure_origins:sunborn_powers/thermal_spike/death_lock"
     ],
     "icon": {
         "id": "minecraft:blaze_rod"
