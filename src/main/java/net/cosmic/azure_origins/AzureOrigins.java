@@ -5,7 +5,6 @@ import net.cosmic.azure_origins.item.ModItemGroups;
 import net.cosmic.azure_origins.item.ModItems;
 import net.cosmic.azure_origins.sound.ModSounds;
 import net.fabricmc.api.ModInitializer;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
