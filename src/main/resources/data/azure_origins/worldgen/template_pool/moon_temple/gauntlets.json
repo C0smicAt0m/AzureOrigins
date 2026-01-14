@@ -10,6 +10,60 @@
         "location": "azure_origins:moon_temple/gauntlets/debug_room",
         "processors": "minecraft:empty"
       }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "projection": "rigid",
+        "location": "azure_origins:moon_temple/gauntlets/gauntlet_1_1",
+        "processors": "minecraft:empty"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "projection": "rigid",
+        "location": "azure_origins:moon_temple/gauntlets/gauntlet_1_2",
+        "processors": "minecraft:empty"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "projection": "rigid",
+        "location": "azure_origins:moon_temple/gauntlets/gauntlet_1_3",
+        "processors": "minecraft:empty"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "projection": "rigid",
+        "location": "azure_origins:moon_temple/gauntlets/gauntlet_1_4",
+        "processors": "minecraft:empty"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "projection": "rigid",
+        "location": "azure_origins:moon_temple/gauntlets/gauntlet_turn_1",
+        "processors": "minecraft:empty"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "projection": "rigid",
+        "location": "azure_origins:moon_temple/gauntlets/gauntlet_turn_2",
+        "processors": "minecraft:empty"
+      }
     }
   ]
 }
