@@ -40,7 +40,7 @@
       },
       {
         "type": "origins:explode",
-        "power": 4,
+        "power": 3,
         "destruction_type": "keep",
         "damage_self": false,
         "create_fire": false

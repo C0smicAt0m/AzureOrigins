@@ -1,0 +1,119 @@
+{
+  "hidden": false,
+  "name": "Thermal Spike",
+  "description": "After a brief charge-up period where you are given slowness, you create an explosion at your location. You heal 8 hearts, gain absorption 2, and are given speed for a short time.",
+  "type": "origins:active_self",
+  "key": {
+    "key": "secondary",
+    "continuous": false
+  },
+  "cooldown": 1200,
+  "hud_render": {
+    "should_render": true,
+    "sprite_location": "azure_origins:textures/azureoriginsbars.png",
+    "bar_index": 6
+  },
+  "entity_action": {
+    "type": "origins:and",
+    "actions": [
+      {
+        "type": "origins:if_else",
+        "condition": {
+          "type": "origins:resource",
+          "resource": "azure_origins:sunborn_powers/thermal_spike/death_lock",
+          "comparison": "==",
+          "compare_to": 0
+        },
+        "if_action": {
+          "type": "origins:change_resource",
+          "resource": "azure_origins:sunborn_powers/thermal_spike/use_shader",
+          "operation": "set",
+          "change": 1
+        }
+      },
+      {
+        "type": "origins:apply_effect",
+        "effect": {
+          "id": "minecraft:slowness",
+          "duration": 120,
+          "amplifier": 0
+        }
+      },
+      {
+        "type": "origins:if_else",
+        "condition": {
+          "type": "origins:resource",
+          "resource": "azure_origins:sunborn_powers/thermal_spike/death_lock",
+          "comparison": "==",
+          "compare_to": 0
+        },
+        "if_action": {
+          "type": "origins:play_sound",
+          "sound": "azure_origins:heartbeat",
+          "category": "players",
+          "volume": 0.75,
+          "pitch": 1
+        }
+      },
+      {
+        "type": "origins:delay",
+        "ticks": 40,
+        "action": {
+          "type": "origins:if_else",
+          "condition": {
+            "type": "origins:resource",
+            "resource": "azure_origins:sunborn_powers/thermal_spike/death_lock",
+            "comparison": "==",
+            "compare_to": 0
+          },
+          "if_action": {
+            "type": "origins:play_sound",
+            "sound": "azure_origins:heartbeat",
+            "category": "players",
+            "volume": 0.75,
+            "pitch": 1
+          }
+        }
+      },
+      {
+        "type": "origins:delay",
+        "ticks": 80,
+        "action": {
+          "type": "origins:if_else",
+          "condition": {
+            "type": "origins:resource",
+            "resource": "azure_origins:sunborn_powers/thermal_spike/death_lock",
+            "comparison": "==",
+            "compare_to": 0
+          },
+          "if_action": {
+            "type": "origins:play_sound",
+            "sound": "azure_origins:heartbeat",
+            "category": "players",
+            "volume": 0.75,
+            "pitch": 1
+          }
+        }
+      },
+      {
+        "type": "origins:delay",
+        "ticks": 120,
+        "action": {
+          "type": "origins:if_else",
+          "condition": {
+            "type": "origins:resource",
+            "resource": "azure_origins:sunborn_powers/thermal_spike/death_lock",
+            "comparison": "==",
+            "compare_to": 0
+          },
+          "if_action": {
+            "type": "origins:change_resource",
+            "resource": "azure_origins:sunborn_powers/thermal_spike/can_heal",
+            "operation": "set",
+            "change": 1
+          }
+        }
+      }
+    ]
+  }
+}

@@ -1,6 +1,6 @@
 package net.cosmic.azure_origins.client.renderer.model;
 
-import net.cosmic.azure_origins.entity.custom.Moonblast;
+import net.cosmic.azure_origins.entity.custom.projectiles.Moonblast;
 import net.minecraft.client.model.*;
 import net.minecraft.client.render.VertexConsumer;
 import net.minecraft.client.render.entity.model.EntityModel;

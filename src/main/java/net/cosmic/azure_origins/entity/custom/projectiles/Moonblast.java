@@ -1,9 +1,8 @@
-package net.cosmic.azure_origins.entity.custom;
+package net.cosmic.azure_origins.entity.custom.projectiles;
 
 import net.cosmic.azure_origins.damage.ModDamageTypes;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityType;
-import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.data.DataTracker;
 import net.minecraft.entity.projectile.ProjectileEntity;
 import net.minecraft.particle.ParticleTypes;
@@ -12,13 +11,11 @@ import net.minecraft.sound.SoundEvents;
 import net.minecraft.util.hit.EntityHitResult;
 import net.minecraft.util.hit.HitResult;
 import net.minecraft.util.math.BlockPos;
-import net.minecraft.util.math.Box;
 import net.minecraft.util.math.Vec3d;
 import net.minecraft.world.World;
-import java.util.List;
 
-public class Daybreak extends ProjectileEntity {
-    public Daybreak(EntityType<? extends ProjectileEntity> entityType, World world) {
+public class Moonblast extends ProjectileEntity {
+    public Moonblast(EntityType<? extends ProjectileEntity> entityType, World world) {
         super(entityType, world);
     }
 
@@ -46,7 +43,7 @@ public class Daybreak extends ProjectileEntity {
                 double dz = (random.nextDouble() - 0.5) * 0.5;
 
                 getWorld().addParticle(
-                        ParticleTypes.FLAME,
+                        ParticleTypes.GLOW,
                         getX() + dx,
                         getY() + dy + 0.25,
                         getZ() + dz,
@@ -68,7 +65,7 @@ public class Daybreak extends ProjectileEntity {
                 this.onCollision(hitResult);
             }
             // Lifetime limit
-            if (this.age > 120) {
+            if (this.age > 80) {
                 discard();
             }
         }
@@ -79,21 +76,15 @@ public class Daybreak extends ProjectileEntity {
         super.onEntityHit(entityHitResult);
 
         Entity entity = entityHitResult.getEntity();
-
-        entity.damage(this.getDamageSources().create(ModDamageTypes.SOLAR, this, this.getOwner()), 3.0F);
-        entity.setOnFireFor(12);
+        entity.damage(this.getDamageSources().create(ModDamageTypes.LUNAR, this, this.getOwner()), 5.0F);
 
         BlockPos pos = this.getBlockPos();
-        getWorld().playSound(null, pos, SoundEvents.ENTITY_FIREWORK_ROCKET_BLAST, SoundCategory.PLAYERS, 1.0F, (0.8F + getWorld().random.nextFloat() * 0.4F));
+        getWorld().playSound(null, pos, SoundEvents.ITEM_MACE_SMASH_AIR, SoundCategory.PLAYERS, 1.0F, (0.8F + getWorld().random.nextFloat() * 0.4F));
     }
 
     @Override
     protected void onCollision(HitResult hitResult) {
         super.onCollision(hitResult);
-
-        float explosionPower = 2.0F;
-        explode(explosionPower);
-        burnEntities(explosionPower * 2.0F, 16);
 
         if (hitResult.getType() == HitResult.Type.ENTITY) {
             this.onEntityHit((EntityHitResult) hitResult);
@@ -111,32 +102,9 @@ public class Daybreak extends ProjectileEntity {
         this.velocityDirty = true;
     }
 
-    private void explode(float explosionPower) {
-        getWorld().createExplosion(this, this.getX(), this.getY(), this.getZ(), explosionPower, World.ExplosionSourceType.NONE);
-    }
-
-    private void burnEntities(double radius, int seconds) {
-        Box box = new Box(
-                getX() - radius, getY() - radius, getZ() - radius,
-                getX() + radius, getY() + radius, getZ() + radius
-        );
-
-        List<LivingEntity> entities =
-                getWorld().getEntitiesByClass(
-                        LivingEntity.class,
-                        box,
-                        e -> e != this.getOwner()
-                );
-
-        for (LivingEntity entity : entities) {
-            entity.setOnFireFor(seconds);
-        }
-    }
-
     @Override
     protected boolean canHit(Entity entity) {
         if (entity == getOwner()) return false;
         return super.canHit(entity);
     }
-
 }

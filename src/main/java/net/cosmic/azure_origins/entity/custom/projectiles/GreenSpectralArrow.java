@@ -1,4 +1,4 @@
-package net.cosmic.azure_origins.entity.custom;
+package net.cosmic.azure_origins.entity.custom.projectiles;
 
 import net.cosmic.azure_origins.entity.ModEntities;
 import net.cosmic.azure_origins.item.ModItems;

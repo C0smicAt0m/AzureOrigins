@@ -2,7 +2,7 @@ package net.cosmic.azure_origins.client.renderer;
 
 import net.cosmic.azure_origins.client.AzureOriginsClient;
 import net.cosmic.azure_origins.client.renderer.model.DaybreakModel;
-import net.cosmic.azure_origins.entity.custom.Daybreak;
+import net.cosmic.azure_origins.entity.custom.projectiles.Daybreak;
 import net.minecraft.client.render.OverlayTexture;
 import net.minecraft.client.render.RenderLayer;
 import net.minecraft.client.render.VertexConsumer;

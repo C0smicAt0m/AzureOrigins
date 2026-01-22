@@ -2,7 +2,7 @@ package net.cosmic.azure_origins.client.renderer;
 
 import net.cosmic.azure_origins.client.AzureOriginsClient;
 import net.cosmic.azure_origins.client.renderer.model.MoonblastModel;
-import net.cosmic.azure_origins.entity.custom.Moonblast;
+import net.cosmic.azure_origins.entity.custom.projectiles.Moonblast;
 import net.minecraft.client.render.OverlayTexture;
 import net.minecraft.client.render.RenderLayer;
 import net.minecraft.client.render.VertexConsumer;

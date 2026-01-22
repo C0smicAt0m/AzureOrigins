@@ -1,7 +1,7 @@
 package net.cosmic.azure_origins.entity;
 
 import net.cosmic.azure_origins.AzureOrigins;
-import net.cosmic.azure_origins.entity.custom.*;
+import net.cosmic.azure_origins.entity.custom.projectiles.*;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.SpawnGroup;
 import net.minecraft.registry.Registries;

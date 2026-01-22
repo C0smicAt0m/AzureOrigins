@@ -1,4 +1,4 @@
-package net.cosmic.azure_origins.entity.custom;
+package net.cosmic.azure_origins.entity.custom.projectiles;
 
 import net.cosmic.azure_origins.damage.ModDamageTypes;
 import net.minecraft.entity.Entity;
@@ -17,10 +17,10 @@ import net.minecraft.world.World;
 import java.util.HashSet;
 import java.util.Set;
 
-public class SearingLight extends ProjectileEntity {
+public class Lunashock extends ProjectileEntity {
     private final Set<Integer> hitEntities = new HashSet<>();
 
-    public SearingLight(EntityType<? extends ProjectileEntity> entityType, World world) {
+    public Lunashock(EntityType<? extends ProjectileEntity> entityType, World world) {
         super(entityType, world);
     }
 
@@ -48,7 +48,7 @@ public class SearingLight extends ProjectileEntity {
                 double dz = (random.nextDouble() - 0.5) * 0.5;
 
                 getWorld().addParticle(
-                        ParticleTypes.FLAME,
+                        ParticleTypes.GLOW,
                         getX() + dx,
                         getY() + dy + 0.25,
                         getZ() + dz,
@@ -88,11 +88,9 @@ public class SearingLight extends ProjectileEntity {
 
         hitEntities.add(entity.getId());
 
-        entity.damage(this.getDamageSources().create(ModDamageTypes.SOLAR, this, this.getOwner()), 3.0F);
-        entity.setOnFireFor(12);
-
+        entity.damage(this.getDamageSources().create(ModDamageTypes.LUNAR, this, this.getOwner()), 8.0F);
         BlockPos pos = this.getBlockPos();
-        getWorld().playSound(null, pos, SoundEvents.ENTITY_FIREWORK_ROCKET_BLAST, SoundCategory.PLAYERS, 1.0F, (0.8F + getWorld().random.nextFloat() * 0.4F));
+        getWorld().playSound(null, pos, SoundEvents.ITEM_MACE_SMASH_AIR, SoundCategory.PLAYERS, 1.0F, (0.8F + getWorld().random.nextFloat() * 0.4F));
     }
 
     @Override
@@ -102,9 +100,8 @@ public class SearingLight extends ProjectileEntity {
         if (hitResult.getType() == HitResult.Type.ENTITY) {
             this.onEntityHit((EntityHitResult) hitResult);
         }
-
         else if (!getWorld().isClient) {
-            this.discard();
+            discard();
         }
     }
 

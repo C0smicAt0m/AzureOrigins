@@ -1,6 +1,6 @@
 package net.cosmic.azure_origins.client.renderer.model;
 
-import net.cosmic.azure_origins.entity.custom.Daybreak;
+import net.cosmic.azure_origins.entity.custom.projectiles.Daybreak;
 import net.minecraft.client.model.*;
 import net.minecraft.client.render.VertexConsumer;
 import net.minecraft.client.render.entity.model.EntityModel;
